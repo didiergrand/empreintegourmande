@@ -1,0 +1,35 @@
+.container{
+    max-width: var(--display-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+body, button, input, select, textarea {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+a {
+    color: var(--color-brand);
+} 
+a:visited,
+a:hover {
+    color: var(--color-dark-brand);
+}

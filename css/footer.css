@@ -1,0 +1,24 @@
+footer#colophon {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+#secondary {
+    display: flex;
+    justify-content: space-between; 
+}
+#secondary > section {
+    display: flex;
+    align-items: center;
+}
+
+.site-info {
+    font-size: 12px;
+    background-color: var(--color-black);
+    color: var(--color-brand) !important;
+  }
+  .site-info .container {
+    padding: 10px 20px;
+  }
+  .site-info a {
+    color: var(--color-brand);
+  } 

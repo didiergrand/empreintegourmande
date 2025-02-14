@@ -1,0 +1,22 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+}
+
+.main-navigation {
+    margin-left: auto; /* Pushes navigation to the right */
+}
+
+/* Hide site title and description if you want to show only the logo */
+.site-title,
+.site-description {
+    display: none;
+}
