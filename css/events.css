@@ -1,0 +1,8 @@
+.tickets_nostock{
+    background-color: var(--color-error);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
