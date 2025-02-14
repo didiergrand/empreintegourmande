@@ -5,14 +5,14 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.tickets_process{
+.tribe-button{
     background-color: var(--color-dark-brand);
     color: #fff;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.tickets_process:hover{
+.tribe-button:hover{
     background-color: var(--color-brand);
 }
 .tribe-rsvp-message.tribe-rsvp-message-success{
@@ -21,6 +21,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 .tribe-rsvp-message.tribe-rsvp-message-error{
     background-color: var(--color-error);
@@ -28,4 +29,5 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
