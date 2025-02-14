@@ -5,4 +5,27 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
+.tickets_process{
+    background-color: var(--color-dark-brand);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.tickets_process:hover{
+    background-color: var(--color-brand);
+}
+.tribe-rsvp-message.tribe-rsvp-message-success{
+    background-color: var(--color-light-brand);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.tribe-rsvp-message.tribe-rsvp-message-error{
+    background-color: var(--color-error);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
