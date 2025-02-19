@@ -44,5 +44,5 @@
     z-index: 10;
 }
 .tribe-events-c-subscribe-dropdown__container{
-    display: none;
+    display: none !important;
 }
