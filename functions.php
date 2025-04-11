@@ -179,14 +179,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function add_hero_banner_image() {
     if (has_post_thumbnail()) {
         $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-        ?>
-        <style type="text/css"> 
-            .hero-banner {
-                background-image: url(<?php echo esc_url($featured_image[0]); ?>);
-            }
-        </style>
-        <?php
+    } else {
+        // Utiliser l'image d'en-tête par défaut
+        $header_image = get_header_image();
+        if ($header_image) {
+            $featured_image = $header_image;
+        } else {
+            // Fallback si aucune image d'en-tête n'est définie
+            $featured_image = get_template_directory_uri() . '/wp-content/uploads/2022/08/4BC713D4-901B-426F-979B-AF5A69AE371F_1_105_c-1.jpeg';
+        }
     }
+    ?>
+    <style type="text/css"> 
+        .hero-banner {
+            background-image: url(<?php echo esc_url($featured_image); ?>);
+        }
+    </style>
+    <?php
 }
 add_action('wp_head', 'add_hero_banner_image');
 function custom_image_sizes() {
