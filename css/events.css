@@ -64,3 +64,8 @@
 .tribe-events-c-small-cta__link:hover{
     background-color: var(--color-dark-brand) !important;
 }
+@media (min-width: 768px) {
+    .tribe-events-meta-group {
+        width: 208px !important;
+    }
+}
