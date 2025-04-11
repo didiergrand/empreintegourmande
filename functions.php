@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '25.04.11' );
 }
 
 /**
@@ -177,12 +177,28 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function add_hero_banner_image() {
-    if (has_post_thumbnail()) {
+    if (has_post_thumbnail()) { 
         $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
         ?>
         <style type="text/css"> 
             .hero-banner {
                 background-image: url(<?php echo esc_url($featured_image[0]); ?>);
+            }
+        </style>
+        <?php
+    } elseif (has_header_image()) {
+        ?>
+        <style type="text/css"> 
+            .hero-banner {
+                background-image: url(<?php header_image(); ?>);
+            }
+        </style>
+        <?php
+    } else {
+        ?>
+        <style type="text/css"> 
+            .hero-banner {
+                background-image: url(<?php echo get_template_directory_uri() . '/wp-content/uploads/2022/08/4BC713D4-901B-426F-979B-AF5A69AE371F_1_105_c-1.jpeg'; ?>);
             }
         </style>
         <?php
