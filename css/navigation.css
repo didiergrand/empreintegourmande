@@ -109,7 +109,7 @@
   .hamburger-lines {
     height: 26px;
     width: 32px;
-    z-index: 3;
+    z-index: 1003;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,7 +217,7 @@
     left: 47%;
   }
   #primary-menu .focus > .sub-menu {
-    position: static;
+    position: relative; 
     display: block; /* Affiche lors du focus au lieu de modifier top */
     top: auto;
     width: 100%;
