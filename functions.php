@@ -180,7 +180,7 @@ function add_hero_banner_image() {
     if (has_post_thumbnail()) {
         $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
         ?>
-        <style type="text/css">
+        <style type="text/css"> 
             .hero-banner {
                 background-image: url(<?php echo esc_url($featured_image[0]); ?>);
             }
@@ -192,4 +192,22 @@ add_action('wp_head', 'add_hero_banner_image');
 function custom_image_sizes() {
     add_image_size( 'custom-size', 400, 400, true ); // 400x400px, recadré
 }
-add_action( 'after_setup_theme', 'custom_image_sizes' );	
+add_action( 'after_setup_theme', 'custom_image_sizes' );
+
+function empreinte_gourmande_custom_header_setup() {
+    add_theme_support(
+        'custom-header',
+        apply_filters(
+            'empreinte_gourmande_custom_header_args',
+            array(
+                'default-image'      => get_template_directory_uri() . '/wp-content/uploads/2022/08/4BC713D4-901B-426F-979B-AF5A69AE371F_1_105_c-1.jpeg',
+                'width'              => 2000,
+                'height'             => 500,
+                'flex-height'        => true,
+                'flex-width'         => true,
+                'header-text'        => false,
+            )
+        )
+    );
+}
+add_action( 'after_setup_theme', 'empreinte_gourmande_custom_header_setup' );	

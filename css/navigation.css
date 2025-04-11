@@ -72,7 +72,6 @@
   position: absolute;
   top: -2000px;
   margin: 10px 0 50px 0;
-  padding: 10px;
   line-height: 24px;
   font-size: 18px;
   z-index: 2;
@@ -108,7 +107,6 @@
     cursor: pointer;
   }
   .hamburger-lines {
-    display: block;
     height: 26px;
     width: 32px;
     z-index: 3;
@@ -201,11 +199,12 @@
     padding: 20px 20px;
   }
   #primary-menu .sub-menu {
-    position: static; /* Changement de absolute à static */
-    top: auto; /* Suppression du top: -2000px */
+    position: relative; 
+    top: auto; 
     margin: 10px 0;
-    padding: 0; /* Réduction du padding */
-    display: none; /* Cache par défaut */
+    padding: 0; 
+    display: none; 
+    z-index: 999;
   }
   #primary-menu .sub-menu li {
     padding: 0;

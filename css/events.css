@@ -46,3 +46,10 @@
 .tribe-events-c-subscribe-dropdown__container{
     display: none !important;
 }
+.tribe-events-before-html blockquote{
+    font-size: 1.2rem;
+    color: var(--color-light-brand);
+    max-width: 640px;
+    margin: 0 auto 64px auto;
+    text-align: center;
+}
